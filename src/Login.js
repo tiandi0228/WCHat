@@ -5,9 +5,23 @@ import {StyleSheet,View,Text} from 'react-native';
 export default class Login extends Component {
 	render(){
 		return(
-			<View>
-				<Text>111111</Text>
+			<View style={styles.container}>
+				<Text style={styles.welcome}>111111</Text>
 			</View >
 		)
 	}
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#F5FCFF',
+    },
+    welcome: {
+        fontSize: 20,
+        textAlign: 'center',
+        margin: 10,
+    }
+});
